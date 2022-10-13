@@ -9,10 +9,5 @@ container.addEventListener("click", function(event) {
   const dataNumber = element.getAttribute('data-number')
   // const alternativeDataNumber = element.dataset.number
   console.log('Did click on box')
-
-  // if element is not class="box", then do nothing
-  // if the data state is hidden:
-  //   * make it unhidden
-  //   * make the contents of the element equal to the data-number
-  // TODO: Complete function
+  element.textContent = dataNumber
 });
